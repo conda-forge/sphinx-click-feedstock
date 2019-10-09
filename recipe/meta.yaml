@@ -10,8 +10,8 @@ source:
   sha256: 877d4e080f6ded85d566127c7256de8afae6ab4fdc7ef301f7cc906a8177e3e8
 
 build:
-  noarch: python
-  number: 0
+  skip: True  # [py<35]
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -21,8 +21,7 @@ requirements:
     - pbr >=2.0
   run:
     - python
-    - sphinx >=1.5,<2.1
-
+    - sphinx >=1.5,<3.0
 test:
   imports:
     - sphinx_click
@@ -42,3 +41,4 @@ about:
 extra:
   recipe-maintainers:
     - CurtLH
+    - williamjamir
