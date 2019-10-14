@@ -11,17 +11,17 @@ source:
 
 build:
   noarch: python
-  skip: True  # [py<35]
+  skip: True
   number: 2
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
-    - python
+    - python >= 3.5
     - pip
     - pbr >=2.0
   run:
-    - python
+    - python >= 3.5
     - sphinx >=1.5,<3.0
 test:
   imports:
