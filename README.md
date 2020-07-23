@@ -5,7 +5,7 @@ Home: https://pypi.org/project/sphinx-click/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A Sphinx plugin to automatically document click-based applications
 
