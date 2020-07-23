@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -22,9 +22,14 @@ requirements:
   run:
     - python >=3.5
     - sphinx >=1.5,<4.0
+    - click
 test:
   imports:
     - sphinx_click
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://pypi.org/project/sphinx-click/
