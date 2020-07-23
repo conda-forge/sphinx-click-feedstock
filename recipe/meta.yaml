@@ -1,5 +1,5 @@
 {% set name = "sphinx-click" %}
-{% set version = "2.4.0" %}
+{% set version = "2.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fbd16ba84d54ecb6642729272edd9af6c39101827728ef0ab9ad6f3d488e514b
+  sha256: 8ba44ca446ba4bb0585069b8aabaa81e833472d6669b36924a398405311d206f
 
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -22,9 +22,15 @@ requirements:
   run:
     - python >=3.5
     - sphinx >=1.5,<4.0
+    - click
+    - pbr >=2.0
 test:
   imports:
     - sphinx_click
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://pypi.org/project/sphinx-click/
