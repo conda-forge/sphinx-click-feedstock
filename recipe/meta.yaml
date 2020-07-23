@@ -23,6 +23,7 @@ requirements:
     - python >=3.5
     - sphinx >=1.5,<4.0
     - click
+    - pbr >=2.0
 test:
   imports:
     - sphinx_click
