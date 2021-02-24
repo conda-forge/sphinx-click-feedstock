@@ -5,9 +5,13 @@ Home: https://pypi.org/project/sphinx-click/
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-click-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Sphinx plugin to automatically document click-based applications
+
+Development: https://github.com/click-contrib/sphinx-click
+
+Documentation: https://sphinx-click.readthedocs.io/en/latest/
 
 sphinx-click is a Sphinx plugin that allows you to automatically extract
 documentation from a click-based application and include it in your docs.
