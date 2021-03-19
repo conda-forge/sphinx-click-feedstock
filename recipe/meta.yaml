@@ -1,5 +1,5 @@
 {% set name = "sphinx-click" %}
-{% set version = "2.6.0" %}
+{% set version = "2.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6d4a5c5c90644f9100dd0b53dc64ba29164337b13360fcc9f28385561026f1b2
+  sha256: a595fbcb8d2ac0f28643814fa88d7485b636ac8ea88769229c68386bac2815f9
 
 build:
   noarch: python
