@@ -1,11 +1,11 @@
-About sphinx-click
-==================
+About sphinx-click-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-click-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/sphinx-click/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-click-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Sphinx plugin to automatically document click-based applications
 
