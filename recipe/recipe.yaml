@@ -46,7 +46,7 @@ tests:
         - python ${{ python_min }}.*
     script:
       # catch build system drift for bad `0.0.0` versions
-      - python -c "v = __import__('importlib.metadata').metadata.version(); print(v); assert v == ${{ version }}"
+      - python -c "v = __import__('importlib.metadata').metadata.version('sphinx-click'); print(v); assert v == '${{ version }}'"
 
 about:
   license: MIT
