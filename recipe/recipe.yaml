@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "6.1.0"
+  version: "6.2.0"
   python_check_max: "3.14"
 
 package:
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/sphinx-click/sphinx_click-${{ version }}.tar.gz
-  sha256: c702e0751c1a0b6ad649e4f7faebd0dc09a3cc7ca3b50f959698383772f50eef
+  sha256: fc78b4154a4e5159462e36de55b8643747da6cda86b3b52a8bb62289e603776c
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     env:
